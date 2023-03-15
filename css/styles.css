@@ -437,6 +437,65 @@ img {
   background-color: var(--green);
 }
 
+.email-div {
+  margin-left: 80px;
+}
+.email-form {
+  display: flex;
+  gap: 24px;
+}
+.email-input {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  padding: 8px 16px 8px 16px;
+}
+.email-input::placeholder {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+.email-input:focus,
+.email-input:hover {
+  outline: none;
+}
+.email-btn {
+  font-family: "roboto", sans-serif;
+  background-color: var(--iris);
+  padding: 8px 24px;
+  gap: 16px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-func);
+}
+.email-btn:focus,
+.email-btn:hover {
+  background-color: var(--ocean);
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /*page --portfolio*/
 
 .btn-list {
@@ -542,7 +601,7 @@ img {
   z-index: 3;
   transition: opacity 250ms var(--time-func), visibility 250ms var(--time-func);
 }
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -572,7 +631,7 @@ img {
   align-items: center;
   cursor: pointer;
 }
-.icon-modal{
+.icon-modal {
   width: 8px;
   height: 8px;
 }
