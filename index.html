@@ -442,24 +442,91 @@
           <h2 class="footer-social-title">Subscribe</h2>
           <form class="email-form">
             <label hidden for="email">e-mail</label>
-            <input class="email-input" type="email" id="email" placeholder="E-mail" name="email"/>
+            <input
+              class="email-input"
+              type="email"
+              id="email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
             <button class="email-btn" type="submit">
               Subscribe
               <svg class="btn-icon">
-                <use class="use" href="./images/symbol-defs.svg#icon-frame"></use>
+                <use
+                  class="use"
+                  href="./images/symbol-defs.svg#icon-frame"
+                ></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
           <svg class="icon-modal">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <div>
+          <form class="form-contact" name="contact-info">
+            <fieldset class="form-fieldset">
+              <h2 class="form-title">
+                Leave your contacts and we will call you back
+              </h2>
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <label class="form-label" for="phone">Phone</label
+              ><input
+                class="form-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+
+              <label class="form-label" for="Email">Email</label
+              ><input
+                class="form-input"
+                type="email"
+                id="Email"
+                name="email"
+                required
+              />
+
+              <label class="form-label" for="comment">Comment</label>
+              <textarea
+                class="form-textarea"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+
+              <div class="form-checkdiv">
+                <input
+                  class="form-checkbox"
+                  type="checkbox"
+                  name=""
+                  id="checkbox"
+                />
+                <label class="form-label" for="checkbox"
+                  >I accept the terms and conditions of the
+                  <a href="">Privacy Policy</a></label
+                >
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
